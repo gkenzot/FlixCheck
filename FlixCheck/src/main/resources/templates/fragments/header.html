@@ -1,0 +1,32 @@
+<header th:fragment="header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-shrink-0">
+    <div class="container py-1">
+      <a class="navbar-brand text-white font-weight-bold text-monospace" th:href="@{/inicio}">FLIX CHECK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/inicio}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/cadastro}">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/listagem}">Avaliações</a>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link d-flex align-items-center">
+              <label class="form-check-label mb-0 me-2" for="darkModeSwitch">Modo Escuro </label>
+              <input class="form-check-input me-2" type="checkbox" id="darkModeSwitch">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
